@@ -1,0 +1,9 @@
+This module utilizes a Matlab Runtime Compiled program for backend calculations and plotting of the model results.
+The module is to be run as a standalone application, and can be downloaded at http://www.coastalsustainability.rice.edu/outreach/.
+
+For help troubleshooting the Matlab executable, please visit https://www.mathworks.com/products/compiler.html.
+Model parameterization follows Nittrouer et al., 2012 GSAB; the parameters can be viewed in the source code at https://github.com/amoodie/research_outreach.
+
+The module was created by Andrew J. Moodie as part of an National Science Foundation funded research project assessing the sustainability of anthropogenically influenced deltas.
+The research is supported by Grant No. 1427262 and an NSF Graduate Research Fellowship to A.J.M. under Grant No. 1450681.
+For more information, please visit http://www.coastalsustainability.rice.edu/outreach/.
