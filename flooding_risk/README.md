@@ -20,7 +20,7 @@ _Note that if you have a full Matlab license,_ there is a section at the end for
   * note that the program may take up to a minute to launch the first time.
 
 ## 1.2 Mac (OSX)
-forthcoming
+forthcoming...
 
 ## 1.3 Linux (Ubuntu)
 * Visit the 'download' folder of this repository ([https://github.com/amoodie/research_outreach/tree/master/flooding_risk/download](https://github.com/amoodie/research_outreach/tree/master/flooding_risk/download)) and download the 64-bit Linux FloodingModule installer.
