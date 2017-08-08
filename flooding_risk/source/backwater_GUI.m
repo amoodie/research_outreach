@@ -131,7 +131,7 @@ function backwater_GUI()
     
     % Make the UI visible.
     f.Visible = 'on';
-    set(f, 'Units', 'normalized', 'Position', [0.25 0.25 0.75 0.75], 'resize', 'off')
+    set(f, 'Units', 'normalized', 'Position', [0.1 0.1 0.75 0.75], 'resize', 'off')
 
     % define callback functions
     function updateQw(source, ~)

@@ -7,7 +7,7 @@ This readme file provides an overview of the installation and setup process, as 
 
 Visit the section of the text below for more information on installing and executing the FloodingModule program on your computer. 
 
-Note that if you have a full Matlab license, there is a section at the end for running the module from source. This method is recommended over using the MCR if possible.
+_Note that if you have a full Matlab license,_ there is a section at the end for running the module from source. This method is recommended over using the MCR if possible.
 
 ## 1.1 Windows (Windows 10)
 * Visit the 'download' folder of this repository ([https://github.com/amoodie/research_outreach/tree/master/flooding_risk/download](https://github.com/amoodie/research_outreach/tree/master/flooding_risk/download)) and download the 64-bit Windows 10 FloodingModule installer.
