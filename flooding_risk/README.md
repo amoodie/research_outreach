@@ -2,8 +2,9 @@ This flooding risk module is intended to help educators demonstrate some basic p
 
 This readme file provides an overview of the installation and setup process, as well as a brief description of the module worksheets available.
 
-![demo gif](https://github.com/amoodie/research_outreach/tree/master/flooding_risk/private/guidemo_crop.gif "Demo of GUI")
+![demo image](./private/guidemo_img.png "Demo of GUI")
 
+[demo gif here](./private/guidemo_gif.gif)
 
 # 1.0 Installation and setup guides
 
@@ -12,7 +13,7 @@ Visit the section of the text below for more information on installing and execu
 _Note that if you have a full Matlab license,_ there is a section at the end for running the module from source. This method is recommended over using the MCR if possible.
 
 ## 1.1 Windows (Windows 10)
-* Visit the 'download' folder of this repository ([https://github.com/amoodie/research_outreach/tree/master/flooding_risk/download](https://github.com/amoodie/research_outreach/tree/master/flooding_risk/download)) and download the 64-bit Windows 10 FloodingModule installer.
+* Visit the 'download' folder of this repository ([https://github.com/amoodie/research_outreach/tree/master/flooding_risk/download](./download)) and download the 64-bit Windows 10 FloodingModule installer.
 * Run the installer by navigating to the download directory and executing the installer by double clicking. Note that you may have to run this as administrator, depending on where you intend to install the program and Matlab MCR.
 * Follow the default options. If you must make any changes during the install process, be sure to note them (e.g., the install location), as you will may this information to run the module program.
 * You can now run the program by navigating to the install location. 
