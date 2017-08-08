@@ -2,6 +2,8 @@ This flooding risk module is intended to help educators demonstrate some basic p
 
 This readme file provides an overview of the installation and setup process, as well as a brief description of the module worksheets available.
 
+![demo gif](https://github.com/amoodie/research_outreach/tree/master/flooding_risk/private/guidemo_crop.gif "Demo of GUI")
+
 
 # 1.0 Installation and setup guides
 
