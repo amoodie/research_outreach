@@ -1,6 +1,6 @@
 # channel functions
 import numpy as np
-
+import hydro, utils
 
 def set_B(B0, mou, thet, nx, dx):
     # set B for channel width
