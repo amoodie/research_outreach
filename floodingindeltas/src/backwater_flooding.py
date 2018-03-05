@@ -77,7 +77,6 @@ slide_Qw = utils.MinMaxSlider(ax_Qw, 'water discharge (m$^3$/s)', Qwmin, Qwmax,
     valinit=Qwinit, valstep=500, transform=ax.transAxes)
 
 # add gui table
-
 ax_overTable = plt.axes([0.20, 0.1, 0.5, 0.1], frameon=False, xticks=[], yticks=[])
 tabData = [['0', '0', False], ['0', '0', False],
            ['0', '0', False], ['0', '0', False],
@@ -90,13 +89,13 @@ overTable = plt.table(cellText=tabData, rowLabels=tabRowName,
                       loc="center")
 overTable.scale(1, 1.5) # xscale, yscale
 [ overTable._cells[(c, 0)]._text.set_text(utils.format_table(HRK)) 
-    for c, HRK in zip(np.arange(1,6), H[RKidxs]) ]
-
-# overTable._cells[(2, 1)]._text.set_text("TEST")
-
-# tab.Data(1:end, 2) = (  sprintfc( '%10.1f', (H(RKidxs)) )  ) # insert proper depths
-# tab.Data(1:end, 3) = (  sprintfc( '%10.1f', (eta(RKidxs)+H(RKidxs))' )  ); % insert proper stage
-
+    for c, HRK in zip(np.arange(1,6), H[RKidxs]) ] # insert flow depth values
+[ overTable._cells[(c, 1)]._text.set_text(utils.format_table(StRK)) 
+    for c, StRK in zip(np.arange(1,6), H[RKidxs]+eta[RKidxs]) ] # insert stage values
+[ overTable._cells[(c, 2)]._text.set_text(str(ObRK)) 
+    for c, ObRK in zip(np.arange(1,6), 
+    H[RKidxs]+eta[RKidxs] > eta[RKidxs]+zed[RKidxs]) ] # insert flow depth values
+    
 
 # add gui buttons
 
@@ -121,7 +120,15 @@ def update(val):
     BwValue.set_x(((Xs[1]-Xs[0])/4 + Xs[0])/1000)
     BwBracket.set_xdata(np.array([Xs[0], Xs[0], Xs[1], Xs[1]])/1000)
 
-    # updateTable()
+    # update table
+    [ overTable._cells[(c, 0)]._text.set_text(utils.format_table(HRK)) 
+    for c, HRK in zip(np.arange(1,6), H[RKidxs]) ] # insert flow depth values
+    [ overTable._cells[(c, 1)]._text.set_text(utils.format_table(StRK)) 
+        for c, StRK in zip(np.arange(1,6), H[RKidxs]+eta[RKidxs]) ] # insert stage values
+    [ overTable._cells[(c, 2)]._text.set_text(str(ObRK)) 
+        for c, ObRK in zip(np.arange(1,6), 
+        H[RKidxs]+eta[RKidxs] > eta[RKidxs]+zed[RKidxs]) ] # insert flow depth values
+
     fig.canvas.draw_idle()
 
 

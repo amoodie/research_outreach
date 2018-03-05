@@ -9,7 +9,7 @@ def format_number(number):
     return(string)
 
 def format_table(number):
-    integer = int(round(number, 0))
+    integer = (round(number, 1))
     # string = "{:,}".format(integer)
     string = str(integer)
     return(string)
